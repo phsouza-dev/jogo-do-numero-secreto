@@ -26,12 +26,9 @@ function gerarNumeroAleatorio() {
         return gerarNumeroAleatorio();
     } else {
         listadeNumerosSorteados.push(numeroEscolhido);
-        console.log(listadeNumerosSorteados);
         return numeroEscolhido;
     }
 }
-
-console.log(numeroSecreto);
 
 function verificarChute() {
     let chute = document.querySelector('input').value;
@@ -63,6 +60,5 @@ function novoJogo() {
     limparCampo();
     tentativas = 1;
     exibirMensagemInicial();
-    console.log(numeroSecreto);
     document.getElementById('reiniciar').setAttribute('disabled', true);
 }
